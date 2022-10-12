@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -22,5 +22,10 @@
   "homepage": "https://github.com/SergeiKiss/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
