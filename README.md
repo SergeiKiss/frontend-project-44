@@ -6,3 +6,4 @@
 https://asciinema.org/a/RJWYr2PUOcOlMsJ8PfQGYHIoX - asciinema recording (brain-even).
 https://asciinema.org/a/vUVakrlnL7CMrrmuCGSuqfkx1 - asciinema recording (brain-calc).
 https://asciinema.org/a/5sCC5M739EoLLbheMHB4x3bpk - asciinema recording (brain-gcd).
+https://asciinema.org/a/nHAtvCyxfQJn0ezg1SdmY1vIc - asciinema recording (brain-progression).
