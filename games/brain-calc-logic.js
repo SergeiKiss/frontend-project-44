@@ -1,9 +1,9 @@
-import readlineSync from 'readline-sync';
 import {
   intro,
   randomNum,
   randomOperator,
   outro,
+  gameWithAnswerNum,
 } from '../src/index.js';
 
 export default () => {
@@ -27,18 +27,9 @@ export default () => {
         answer = randomNum1 * randomNum2;
         break;
     }
-    console.log(`Question: ${expression}`);
-    let userAnswer = readlineSync.prompt();
-    console.log(`Your answer: ${userAnswer}`);
-    userAnswer = Number(userAnswer);
-    if (userAnswer === answer) {
-      console.log('Correct!');
+    if (gameWithAnswerNum(expression, answer)) {
       countOfCorrectAnswers += 1;
-    } else if (Number.isNaN(userAnswer)) {
-      console.log('Only numbers are allowed.');
-      break;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       break;
     }
   }

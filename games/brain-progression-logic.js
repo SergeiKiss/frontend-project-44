@@ -1,5 +1,9 @@
-import readlineSync from 'readline-sync';
-import { intro, outro, randomNum } from '../src/index.js';
+import {
+  intro,
+  outro,
+  randomNum,
+  gameWithAnswerNum,
+} from '../src/index.js';
 
 export default () => {
   const task = 'What number is missing in the progression?';
@@ -28,18 +32,9 @@ export default () => {
         expression += `${numOfProgression} `;
       }
     }
-    console.log(`Question: ${expression}`);
-    let userAnswer = readlineSync.prompt();
-    console.log(`Your answer: ${userAnswer}`);
-    userAnswer = Number(userAnswer);
-    if (userAnswer === answer) {
-      console.log('Correct!');
+    if (gameWithAnswerNum(expression, answer)) {
       countOfCorrectAnswers += 1;
-    } else if (Number.isNaN(userAnswer)) {
-      console.log('Only numbers are allowed.');
-      break;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       break;
     }
   }
