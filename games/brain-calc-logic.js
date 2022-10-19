@@ -11,8 +11,8 @@ export default () => {
   const name = intro(task);
   let countOfCorrectAnswers = 0;
   for (let i = 0; i < 3; i += 1) {
-    const randomNum1 = randomNum();
-    const randomNum2 = randomNum();
+    const randomNum1 = randomNum(100);
+    const randomNum2 = randomNum(100);
     const randomOperatorStr = randomOperator();
     const expression = `${randomNum1} ${randomOperatorStr} ${randomNum2}`;
     let answer;

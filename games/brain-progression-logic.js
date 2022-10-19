@@ -10,8 +10,8 @@ export default () => {
   const name = intro(task);
   let countOfCorrectAnswers = 0;
   for (let i = 0; i < 3; i += 1) {
-    const step = randomNum();
-    const firstNum = randomNum();
+    const step = randomNum(100);
+    const firstNum = randomNum(100);
     const randomPlaceInProgression = Math.floor(Math.random() * 10);
     let expression = '';
     let numOfProgression = firstNum;

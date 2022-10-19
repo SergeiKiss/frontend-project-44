@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
 
-export const randomNum = () => Math.floor(Math.random() * 100);
+export const randomNum = (range) => Math.floor(Math.random() * range);
 
 export const randomOperator = () => {
   const arrOfOperators = ['+', '-', '*'];

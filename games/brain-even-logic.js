@@ -6,7 +6,7 @@ export default () => {
   const name = intro(task);
   let countOfCorrectAnswers = 0;
   for (let i = 0; i < 3; i += 1) {
-    const expression = randomNum();
+    const expression = randomNum(100);
     console.log(`Question: ${expression}`);
     const answer = readlineSync.prompt();
     console.log(`Your answer: ${answer}`);
