@@ -13,9 +13,9 @@ export default () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNum1 = randomNum(100);
     const randomNum2 = randomNum(100);
-    const expression = `${randomNum1} ${randomNum2}`;
+    // const expression = `${randomNum1} ${randomNum2}`;
     const answer = gcd(randomNum1, randomNum2);
-    console.log(`Question: ${expression}`);
+    console.log(`Question: ${randomNum1} ${randomNum2}`);
     let userAnswer = readlineSync.prompt();
     console.log(`Your answer: ${userAnswer}`);
     userAnswer = Number(userAnswer);
