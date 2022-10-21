@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { gcd } from 'mathjs';
+// import { gcd } from 'mathjs';
 import {
   intro,
   outro,
@@ -14,7 +14,8 @@ export default () => {
     const randomNum1 = randomNum(10);
     const randomNum2 = randomNum(10);
     // const expression = `${randomNum1} ${randomNum2}`;
-    const answer = gcd(randomNum1, randomNum2);
+    // const answer = gcd(randomNum1, randomNum2);
+    const answer = 1;
     console.log(`Question: ${randomNum1} ${randomNum2}`);
     let userAnswer = readlineSync.question('Your answer: ');
     // console.log(`Your answer: ${userAnswer}`);
