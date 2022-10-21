@@ -14,7 +14,6 @@ export default () => {
     const expression = randomNum(100);
     console.log(`Question: ${expression}`);
     const answer = readlineSync.question('Your answer: ');
-    // console.log(`Your answer: ${answer}`);
     if (isPrime(expression) && answer === 'yes') {
       console.log('Correct!');
       countOfCorrectAnswers += 1;
