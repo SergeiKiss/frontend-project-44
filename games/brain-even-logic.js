@@ -8,8 +8,8 @@ export default () => {
   for (let i = 0; i < 3; i += 1) {
     const expression = randomNum(100);
     console.log(`Question: ${expression}`);
-    const answer = readlineSync.prompt();
-    console.log(`Your answer: ${answer}`);
+    const answer = readlineSync.question('Your answer: ');
+    // console.log(`Your answer: ${answer}`);
     if (expression % 2 === 0 && answer === 'yes') {
       console.log('Correct!');
       countOfCorrectAnswers += 1;

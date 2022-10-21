@@ -11,8 +11,8 @@ export default () => {
   const name = intro(task);
   let countOfCorrectAnswers = 0;
   for (let i = 0; i < 3; i += 1) {
-    const randomNum1 = randomNum(100);
-    const randomNum2 = randomNum(100);
+    const randomNum1 = randomNum(10);
+    const randomNum2 = randomNum(10);
     // const expression = `${randomNum1} ${randomNum2}`;
     const answer = gcd(randomNum1, randomNum2);
     console.log(`Question: ${randomNum1} ${randomNum2}`);
