@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-import { gcd } from 'mathjs';
 import greeting from './cli.js';
 
 export const randomNum = (range) => Math.floor(Math.random() * range);
@@ -9,7 +8,12 @@ export const randomOperator = () => {
   return arrOfOperators[Math.floor(Math.random() * 3)];
 };
 
-export const evalGCD = (number1, number2) => gcd(number1, number2);
+export const gcd = (number1, number2) => {
+  if (!number2) {
+    return number1;
+  }
+  return gcd(number2, number1 % number2);
+};
 
 export const intro = (task) => {
   const name = greeting();
@@ -20,7 +24,6 @@ export const intro = (task) => {
 export const gameWithAnswerNum = (expression, answer) => {
   console.log(`Question: ${expression}`);
   let userAnswer = readlineSync.question('Your answer: ');
-  // console.log(`Your answer: ${userAnswer}`);
   userAnswer = Number(userAnswer);
   if (userAnswer === answer) {
     console.log('Correct!');
