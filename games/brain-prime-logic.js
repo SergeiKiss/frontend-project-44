@@ -1,6 +1,10 @@
 import readlineSync from 'readline-sync';
-import { isPrime } from 'mathjs';
-import { intro, outro, randomNum } from '../src/index.js';
+import {
+  intro,
+  outro,
+  randomNum,
+  isPrime,
+} from '../src/index.js';
 
 export default () => {
   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
