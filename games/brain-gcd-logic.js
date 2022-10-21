@@ -15,9 +15,9 @@ export default () => {
     const randomNum2 = randomNum(100);
     // const expression = `${randomNum1} ${randomNum2}`;
     const answer = gcd(randomNum1, randomNum2);
-    readlineSync.question(`Question: ${randomNum1} ${randomNum2}`);
-    let userAnswer = readlineSync.prompt();
-    console.log(`Your answer: ${userAnswer}`);
+    console.log(`Question: ${randomNum1} ${randomNum2}`);
+    let userAnswer = readlineSync.question('Your answer: ');
+    // console.log(`Your answer: ${userAnswer}`);
     userAnswer = Number(userAnswer);
     if (userAnswer === answer) {
       console.log('Correct!');
