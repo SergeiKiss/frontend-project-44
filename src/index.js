@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import { gcd } from 'mathjs';
 import greeting from './cli.js';
 
 export const randomNum = (range) => Math.floor(Math.random() * range);
@@ -7,6 +8,8 @@ export const randomOperator = () => {
   const arrOfOperators = ['+', '-', '*'];
   return arrOfOperators[Math.floor(Math.random() * 3)];
 };
+
+export const evalGCD = (number1, number2) => gcd(number1, number2);
 
 export const intro = (task) => {
   const name = greeting();
