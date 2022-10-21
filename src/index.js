@@ -16,8 +16,8 @@ export const intro = (task) => {
 
 export const gameWithAnswerNum = (expression, answer) => {
   console.log(`Question: ${expression}`);
-  let userAnswer = readlineSync.prompt();
-  console.log(`Your answer: ${userAnswer}`);
+  let userAnswer = readlineSync.question('Your answer: ');
+  // console.log(`Your answer: ${userAnswer}`);
   userAnswer = Number(userAnswer);
   if (userAnswer === answer) {
     console.log('Correct!');
