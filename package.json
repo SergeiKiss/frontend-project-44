@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/SergeiKiss/frontend-project-44#readme",
   "dependencies": {
-    "mathjs": "^11.3.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
