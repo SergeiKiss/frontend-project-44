@@ -9,3 +9,18 @@ publish:
 
 lint:
 	npx eslint .
+
+brain-even:
+	brain-even
+
+brain-calc:
+	brain-calc
+
+brain-gcd:
+	brain-gcd
+
+brain-progression:
+	brain-progression
+
+brain-prime:
+	brain-prime
