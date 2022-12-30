@@ -3,8 +3,14 @@ import {
   outro,
   randomNum,
   gameWithAnswerNum,
-  gcd,
 } from '../index.js';
+
+const gcd = (number1, number2) => {
+  if (!number2) {
+    return number1;
+  }
+  return gcd(number2, number1 % number2);
+};
 
 export default () => {
   const task = 'Find the greatest common divisor of given numbers.';

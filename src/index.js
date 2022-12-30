@@ -3,27 +3,6 @@ import greeting from './cli.js';
 
 export const randomNum = (range) => Math.floor(Math.random() * range);
 
-export const randomOperator = () => {
-  const arrOfOperators = ['+', '-', '*'];
-  return arrOfOperators[Math.floor(Math.random() * 3)];
-};
-
-export const gcd = (number1, number2) => {
-  if (!number2) {
-    return number1;
-  }
-  return gcd(number2, number1 % number2);
-};
-
-export const isPrime = (num) => {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return num > 1;
-};
-
 export const intro = (task) => {
   const name = greeting();
   console.log(task);

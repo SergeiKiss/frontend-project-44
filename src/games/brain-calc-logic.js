@@ -1,10 +1,14 @@
 import {
   intro,
   randomNum,
-  randomOperator,
   outro,
   gameWithAnswerNum,
 } from '../index.js';
+
+const randomOperator = () => {
+  const arrOfOperators = ['+', '-', '*'];
+  return arrOfOperators[Math.floor(Math.random() * 3)];
+};
 
 export default () => {
   const task = 'What is the result of the expression?';
