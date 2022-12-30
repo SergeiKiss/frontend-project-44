@@ -2,8 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "7.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Training package - simple text-based games in the console",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
