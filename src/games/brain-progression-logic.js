@@ -3,7 +3,7 @@ import {
   outro,
   randomNum,
   gameWithAnswerNum,
-} from '../src/index.js';
+} from '../index.js';
 
 export default () => {
   const task = 'What number is missing in the progression?';

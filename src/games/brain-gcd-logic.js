@@ -4,7 +4,7 @@ import {
   randomNum,
   gameWithAnswerNum,
   gcd,
-} from '../src/index.js';
+} from '../index.js';
 
 export default () => {
   const task = 'Find the greatest common divisor of given numbers.';

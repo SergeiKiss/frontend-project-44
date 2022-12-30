@@ -4,12 +4,12 @@
   "version": "7.0.0",
   "description": "Training package - simple text-based games in the console",
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js",
-    "brain-prime": "bin/brain-prime.js"
+    "brain-games": "bin/runBrainGames.js",
+    "brain-even": "bin/runBrainEven.js",
+    "brain-calc": "bin/runBrainCalc.js",
+    "brain-gcd": "bin/runBrainGcd.js",
+    "brain-progression": "bin/runBrainProgression.js",
+    "brain-prime": "bin/runBrainPrime.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

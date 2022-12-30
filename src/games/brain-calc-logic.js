@@ -4,7 +4,7 @@ import {
   randomOperator,
   outro,
   gameWithAnswerNum,
-} from '../src/index.js';
+} from '../index.js';
 
 export default () => {
   const task = 'What is the result of the expression?';
