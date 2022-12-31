@@ -1,9 +1,6 @@
-import {
-  intro,
-  outro,
-  randomNum,
-  gameWithAnswerNum,
-} from '../index.js';
+import { runEngine, randomNum } from '../index.js';
+
+const task = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (number1, number2) => {
   if (!number2) {
@@ -12,20 +9,12 @@ const gcd = (number1, number2) => {
   return gcd(number2, number1 % number2);
 };
 
-export default () => {
-  const task = 'Find the greatest common divisor of given numbers.';
-  const name = intro(task);
-  let countOfCorrectAnswers = 0;
-  for (let i = 0; i < 3; i += 1) {
-    const randomNum1 = randomNum(100);
-    const randomNum2 = randomNum(100);
-    const expression = `${randomNum1} ${randomNum2}`;
-    const answer = gcd(randomNum1, randomNum2);
-    if (gameWithAnswerNum(expression, answer)) {
-      countOfCorrectAnswers += 1;
-    } else {
-      break;
-    }
-  }
-  outro(countOfCorrectAnswers, name);
+const generateGCDRound = () => {
+  const randomNum1 = randomNum(100);
+  const randomNum2 = randomNum(100);
+  const expression = `${randomNum1} ${randomNum2}`;
+  const answer = gcd(randomNum1, randomNum2);
+  return [expression, answer];
 };
+
+export default () => runEngine(task, generateGCDRound, 'num');
