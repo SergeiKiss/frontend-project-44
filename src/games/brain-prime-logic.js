@@ -1,4 +1,4 @@
-import { runEngine, randomNum } from '../index.js';
+import { runEngine, generateRoundForGamesWithAnswerStr as gr } from '../index.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -11,10 +11,6 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const generatePrimeRound = () => {
-  const expression = randomNum(100);
-  const answer = isPrime(expression) ? 'yes' : 'no';
-  return [expression, answer];
-};
+const generatePrimeRound = () => gr(isPrime);
 
 export default () => runEngine(task, generatePrimeRound, 'str');

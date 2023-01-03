@@ -3,6 +3,12 @@ import greeting from './cli.js';
 
 export const randomNum = (range) => Math.floor(Math.random() * range);
 
+export const generateRoundForGamesWithAnswerStr = (fn) => {
+  const expression = randomNum(100);
+  const answer = fn(expression) ? 'yes' : 'no';
+  return [expression, answer];
+};
+
 const intro = (task) => {
   const name = greeting();
   console.log(task);

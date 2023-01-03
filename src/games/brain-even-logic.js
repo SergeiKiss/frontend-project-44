@@ -1,4 +1,4 @@
-import { runEngine, randomNum } from '../index.js';
+import { runEngine, generateRoundForGamesWithAnswerStr as gr } from '../index.js';
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -9,10 +9,6 @@ const isEven = (num) => {
   return false;
 };
 
-const generateEvenRound = () => {
-  const expression = randomNum(100);
-  const answer = isEven(expression) ? 'yes' : 'no';
-  return [expression, answer];
-};
+const generateEvenRound = () => gr(isEven);
 
 export default () => runEngine(task, generateEvenRound, 'str');
